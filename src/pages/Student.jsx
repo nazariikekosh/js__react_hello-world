@@ -3,6 +3,7 @@ import styles from "../styles/StudentPage.module.css";
 
 const Student = () => {
   let [counter, setCounter] = useState(0);
+  let [name, setName] = useState('');
 
   return (
     <>
@@ -33,6 +34,12 @@ const Student = () => {
               Add -1
             </div>
             <h2>Result: {counter}</h2>
+            <form>
+                <input type="text" onChange={(e) =>{setName(e.target.value)}} placeholder="name"/>
+                <h2>
+                    {name}
+                </h2>
+            </form>
           </div>
         </div>
       </div>
