@@ -2,7 +2,9 @@ import React from 'react'
 
 const Nazarii = () => {
   return (
-    <div>Nazarii</div>
+    <div>
+        <h2>Hello world !!!</h2>
+    </div>
   )
 }
 
